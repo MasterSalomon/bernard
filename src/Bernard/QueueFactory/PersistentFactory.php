@@ -65,6 +65,7 @@ class PersistentFactory implements \Bernard\QueueFactory
     /**
      * @return integer
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
         return count($this->connection->listQueues());
